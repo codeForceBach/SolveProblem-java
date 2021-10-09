@@ -28,6 +28,10 @@ public class HackerRankTests {
         int result = HackerRankChallenges.hourGlassSum(arr);
         System.out.println("the Max value of the HourGlassSum is " + result);
 */
+        //add more problem methods 10/09/2021
+
+        //_________________move to rapl.it ___________________________
+        /*
         int[][] array = {{1, 2, 3}, {4, 0 , 5}, {6, 7, 8}};
 
         System.out.print("with break label " );
@@ -42,6 +46,9 @@ public class HackerRankTests {
             }//end inner for
         }//end outer for
         System.out.println();
+         */
+
+
     }//end main
 
     private static List<List<Integer>> readFile() throws IOException {
