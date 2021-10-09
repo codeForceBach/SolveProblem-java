@@ -30,25 +30,6 @@ public class HackerRankTests {
 */
         //add more problem methods 10/09/2021
 
-        //_________________move to rapl.it ___________________________
-        /*
-        int[][] array = {{1, 2, 3}, {4, 0 , 5}, {6, 7, 8}};
-
-        System.out.print("with break label " );
-        end:
-        for(int row = 0; row < array.length ; row++){
-            for(int col = 0; col < array[row].length; col++){
-                if(array[row][col] == 0){
-                    break end;
-                }//end if
-                System.out.print(+ array[row][col] + ", ");
-
-            }//end inner for
-        }//end outer for
-        System.out.println();
-         */
-
-
     }//end main
 
     private static List<List<Integer>> readFile() throws IOException {
