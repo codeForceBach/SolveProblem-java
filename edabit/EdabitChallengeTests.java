@@ -1,9 +1,9 @@
 package problemSolve.edabit;
 
-public class ChallengeTests {
+public class EdabitChallengeTests {
 
     public static void main(String[] args) {
-        /*
+
         boolean [] booleanArr= {true, true, false, false, true};
         int count = EdabitChallenges.countTrue(booleanArr);
         System.out.println("expected count of \"true\" is : " + count);
@@ -30,7 +30,7 @@ public class ChallengeTests {
 
 
         System.out.println(EdabitChallenges.dashed("Carpe Diem"));
-        */
+
         //System.out.println(EdabitChallenges.histogram((new int []{3, 5, 0}), "]"));
 
         System.out.println(EdabitChallenges.duplicateCount("abastskadobit"));
