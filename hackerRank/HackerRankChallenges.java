@@ -2,6 +2,7 @@ package problemSolve.hackerRank;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class HackerRankChallenges {
@@ -188,6 +189,67 @@ public class HackerRankChallenges {
         }
         System.out.println("}");
         return maxSum;
+    }
+
+    public static void stringIntro(){
+        Scanner scan = new Scanner(System.in);
+        String A = scan.next();
+        String B = scan.next();
+        System.out.println(A.length() + B.length());
+        if (A.compareTo(B) > 0){
+            System.out.println("Yes");
+        } else
+            System.out.println("No");
+        System.out.println(A.substring(0, 1).toUpperCase() + A.substring(1, A.length()) + " " + B.toUpperCase().substring(0, 1) + B.substring(1, B.length()));
+    }
+
+    public static void stringPalindrome(){
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        StringBuilder output = new StringBuilder(A).reverse();
+        if(A.equals(output.toString())){
+            System.out.println("Yes");
+        }else
+        System.out.println("No");
+
+    }
+
+    public static void getSmallAndlarge (String word, int count){
+        String smallest = "";
+        String largest = "";
+
+        final int wordSize = word.length() - (count - 1);
+
+        //convert string to character array
+        char[] splitChar = word.toCharArray();
+        String [] wordBlock = new String[wordSize];
+        //iterate over array and store number of char to new String array
+        for (int i = 0; i < wordSize ; i++){
+            wordBlock[i] = word.substring(i, i + count);
+            System.out.println(wordBlock[i]);
+
+        }
+        smallest = wordBlock[0];
+        //iterate over new wordBlock string array to compare each String and reset ascending order
+        for(int i = 1 ; i < wordBlock.length ; i++){
+            System.out.println("current smallest " + smallest + " - " + wordBlock[i]);
+            if (wordBlock[i].compareTo(smallest) > 0){
+                //System.out.println("current smallest" + smallest);
+                smallest = wordBlock[i];
+                System.out.println("new smallest " + smallest);
+            }
+        }//end for loop for minimum
+
+        largest = wordBlock[0];
+        //iterate over new wordBlock string array to compare each String and reset ascending order
+        for(int i = 1 ; i < wordBlock.length ; i++){
+            if (largest.compareTo(wordBlock[i]) == 1){
+                largest = wordBlock[i];
+            }
+        }//end for loop for maximum
+
+        System.out.println("the Result -> " + smallest + "\n" + largest);
+
     }
     
 }

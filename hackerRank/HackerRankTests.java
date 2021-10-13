@@ -28,7 +28,14 @@ public class HackerRankTests {
         int result = HackerRankChallenges.hourGlassSum(arr);
         System.out.println("the Max value of the HourGlassSum is " + result);
 */
+
         //add more problem methods 10/09/2021
+        //HackerRankChallenges.stringIntro();
+        //HackerRankChallenges.stringPalindrome();
+        HackerRankChallenges.getSmallAndlarge("Welcometojava", 3);
+        //HackerRankChallenges.getSmallAndlarge("WelcometojavaWorldfortheheckoftime", 5);
+        System.out.println("ava".compareTo("toj"));
+        System.out.println("toj".compareTo("ava"));
 
     }//end main
 
