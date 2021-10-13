@@ -1,2 +1,2 @@
 # SolveProblem-java
-collection of java testing problems
+collection of java problems
